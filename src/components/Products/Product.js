@@ -5,6 +5,7 @@ export default function Product({image,title,price,id}) {
   
   return (
     <article className="product">
+      
       <div className="img-container">
         <img src={image} alt={title}/>
         <Link className='btn btn-primary product-link' to={`/products/${id}`}>Details</Link>

@@ -6,6 +6,8 @@ export default function featuredProducts (data){
 // flatten
 
 export function flattenProducts (data){
+    console.log(data);
+    
     return data.map(item=>{
         let image = item.image.url;
         return {...item,image}
